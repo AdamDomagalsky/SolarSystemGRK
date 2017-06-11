@@ -1,0 +1,29 @@
+﻿  main.cpp
+src\main.cpp(1): warning C4068: unknown pragma
+src\main.cpp(267): warning C4305: '+=': truncation from 'double' to 'GLfloat'
+src\main.cpp(268): warning C4305: '=': truncation from 'double' to 'GLfloat'
+src\main.cpp(273): warning C4805: '==': unsafe mix of type 'GLboolean' and type 'bool' in operation
+src\main.cpp(280): warning C4805: '==': unsafe mix of type 'GLboolean' and type 'bool' in operation
+src\main.cpp(287): warning C4805: '==': unsafe mix of type 'GLboolean' and type 'bool' in operation
+src\main.cpp(294): warning C4805: '==': unsafe mix of type 'GLboolean' and type 'bool' in operation
+src\main.cpp(301): warning C4805: '==': unsafe mix of type 'GLboolean' and type 'bool' in operation
+src\main.cpp(308): warning C4805: '==': unsafe mix of type 'GLboolean' and type 'bool' in operation
+src\main.cpp(315): warning C4805: '==': unsafe mix of type 'GLboolean' and type 'bool' in operation
+src\main.cpp(322): warning C4805: '==': unsafe mix of type 'GLboolean' and type 'bool' in operation
+src\main.cpp(348): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
+src\main.cpp(353): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
+src\main.cpp(358): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
+src\main.cpp(371): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
+src\main.cpp(386): warning C4838: conversion from 'double' to 'GLfloat' requires a narrowing conversion
+src\main.cpp(386): warning C4305: 'initializing': truncation from 'double' to 'GLfloat'
+src\main.cpp(402): warning C4244: '=': conversion from 'int' to 'GLfloat', possible loss of data
+src\main.cpp(403): warning C4244: '=': conversion from 'int' to 'GLfloat', possible loss of data
+src\main.cpp(404): warning C4244: '=': conversion from 'int' to 'GLfloat', possible loss of data
+src\main.cpp(411): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
+  Generating code
+  0 of 1738 functions ( 0.0%) were compiled, the rest were copied from previous compilation.
+    0 functions were new in current compilation
+    54 functions had inline decision re-evaluated but remain unchanged
+  Finished generating code
+  grk-cw5.vcxproj -> C:\Users\neolo\Documents\GRK\Solar System Mieszko Win\Release\grk-cw5.exe
+  grk-cw5.vcxproj -> C:\Users\neolo\Documents\GRK\Solar System Mieszko Win\Release\grk-cw5.pdb (Full PDB)
