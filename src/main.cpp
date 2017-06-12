@@ -21,7 +21,6 @@ GLuint programTexture;
 GLuint sunTexture;
 GLuint programTextureProc;
 GLuint programSkybox;
-//asdsaasdsasdsdsdssdsddssdsddss
 GLuint g_Texture;
 GLuint moon_Texture;
 GLuint sun_Texture;
@@ -33,7 +32,8 @@ GLuint ship_Texture;
 GLfloat acceleration = 1.0;
 float u_time;
 Core::Shader_Loader shaderLoader;
-
+static int g_Width = 600;                          // Initial window width
+static int g_Height = 600;
 obj::Model shipModel;
 obj::Model sphereModel;
 
@@ -45,6 +45,7 @@ glm::vec3 cameraDir;
 glm::mat4 cameraMatrix, perspectiveMatrix;
 glm::vec3 lightDir = glm::normalize(glm::vec3(1.0f, -0.9f, -1.0f));
 
+//Struct Light
 struct Light {
 	glm::vec3 position;
 	glm::vec3 intensities; //a.k.a. the color of the light
@@ -396,7 +397,7 @@ void drawGrid()
 	glEnd();
 }
 
-void cubepositions(void) { //set the positions of the cubes
+void cubePositions(void) { //set the positions of the cubes
 	for (int i = 0;i < PLANETS;i++)
 	{
 		g_YpositionArr[i] = (rand() % 200 - 100);
@@ -470,8 +471,6 @@ unsigned int loadCubemap(std::vector<std::string> faces)
     return textureID;
 }
 
-
-
 void init()
 {
 	glEnable(GL_DEPTH_TEST);
@@ -516,7 +515,7 @@ void init()
 	glEnableVertexAttribArray(0);
 	glBindBuffer(GL_ARRAY_BUFFER, 0);
 	glBindVertexArray(0);
-	cubepositions();
+	cubePositions();
 	//Lights
 
 	gLight1.position = glm::vec3(0.0f, 0.0f, 0.0f);
@@ -546,10 +545,9 @@ int main(int argc, char ** argv)
 	glutInit(&argc, argv);
 	glutInitDisplayMode(GLUT_DEPTH | GLUT_DOUBLE | GLUT_RGBA);
 	glutInitWindowPosition(200, 200);
-	glutInitWindowSize(800, 800);
+	glutInitWindowSize(g_Width, g_Height);
 	glutCreateWindow("Symulacja lotu kosmicznego");
 	glewInit();
-
 	init();
 	glutKeyboardFunc(keyboard);
 	glutDisplayFunc(renderScene);
